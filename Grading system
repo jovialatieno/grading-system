@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+int main() {
+    int maths,English,art;
+    float average;
+
+    printf("Enter maths: ");
+    scanf("%d", &maths);
+    
+    printf("Enter English: ");
+    scanf("%d", &English);
+    
+    printf("Enter art: ");
+    scanf("%d",&art);
+    
+    average=(float)(maths+ English + art)/3;
+    
+    if(average>=0 && average < 40)
+        printf("E");
+
+    else if(average>=40 && average < 49)
+    printf("D");
+    
+    else if(average>=50 && average < 59)
+    printf("C");
+    
+    else if(average>=60 && average < 69)
+    printf("B");
+    
+    else if(average>=70 && average <=100)
+    printf("A");
+    
+    else
+    printf("Invalid");
+
+    return 0;
+}
